@@ -1,0 +1,213 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    line-height: 1.4446;
+    font-weight: 400;
+    letter-spacing: 0em;
+    background-color: #fff;
+    color: #333;
+    font-style: normal;
+}
+body,a,ul,li,dl,ol,dd,dt,span,pre,p,h1,h2,h3,h4,h5,h6,figure{
+    border:0;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+/*head*/
+.head{
+    width: 100%;
+    /*position: absolute;*/
+    background: #444;
+    line-height: 1;
+    /*top: -40px;
+    right: 0;*/
+    height: 40px;
+    z-index: 9999;
+}
+.adv_head{
+    display: block;
+    line-height: 40px;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    text-align: right;
+    max-width: 976px;
+    margin: 0 auto;
+    color: #A8A8AA;
+    font-size: 16px;
+}
+.nav{
+    margin: 0 auto;
+    /*max-width: 980px;*/
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+.menu>li{
+    cursor: default;
+    margin: 0 -10px;
+    width: auto;
+    height: 44px;
+    text-align: justify;
+    float: left;
+}
+/*banner开始*/
+.bannerBox{
+    width:100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    max-height: 100%;
+    min-height: 540px;
+}
+.bannerBox .banner li a{
+    display: block;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+.banner ul>div{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 110%;
+}
+.bannerBox .banner li:nth-child(1) a div {
+    width: auto;
+    height: 540px;
+    top: 30%;
+    bottom: -10%;
+    left: 0;
+    right: 0;
+    background-size: auto 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image:url("../image/macbookpro_large.jpg")
+}
+.bannerBox .banner li:nth-child(2) a div {
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-image:url("../image/iphone_large.jpg")
+}
+.bannerBox .banner li:nth-child(3) a div {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    background-position: 50% 38%;
+    background-image:url("../image/event_large.jpg")
+}
+
+.bannerBox .btn{
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:225px;
+}
+.bannerBox>.btn>.left,.bannerBox>.btn>.right{
+    width: 64px;
+    height: 64px;
+    z-index: 1000;
+    border-radius: 32px;
+    background-color: rgba(180,180,180,0.25);
+    color: #848484;
+    font-size: 40px;
+    line-height: 60px;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    text-align: center;
+    border:0;
+    cursor: pointer;
+}
+.bannerBox>.btn>.left{
+    left:0;
+}
+.bannerBox>.btn>.right{
+    right: 0;
+}
+/*列表*/
+.main{
+    width: 100%;
+    float: left;
+}
+.main .row>div{
+    list-style-type: none;
+    box-sizing: border-box;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    height: 200px;
+}
+/*.list{
+    width:100%;
+    float: left;
+}
+.list .row>div{
+    height: 200px;
+    border: 1px solid red;
+}*/
+/*小屏*/
+.col-s-image-1{
+    background: url("../image/nike_watch_small.jpg");
+}
+.col-s-image-2{
+    background: url("../image/airpods_small.jpg");
+}
+.col-s-image-3{
+    background: url("../image/iphone_upgrade_small.jpg");
+}
+.col-s-image-4{
+    background: url("../image/accessibility_small.jpg");
+}
+
+/*中屏*/
+@media screen and (min-width: 730px) {
+    .list{
+        width:100%;
+    }
+    /*.col-s-image-1{
+        background: url("");
+    }*/
+    .col-m-image-1{
+        background: url("../image/nike_watch_medium.jpg");
+    }
+    .col-s-image-2{
+        background: url("../image/airpods_medium.jpg");
+    }
+    .col-s-image-3{
+        background: url("../image/iphone_upgrade_medium.jpg");
+    }
+    .col-s-image-4{
+        background: url("../image/accessibility_medium.jpg");
+    }
+}
+/*大屏*/
+@media screen and (min-width: 1070px){
+    /*.col-s-image-1{
+        background: url("");
+    }*/
+    .col-l-image-1{
+        background: url("../image/nike_watch_large.jpg");
+    }
+    .col-s-image-2{
+        background: url("../image/airpods_large.jpg");
+    }
+    .col-s-image-3{
+        background: url("../image/iphone_upgrade_large.jpg");
+    }
+    .col-s-image-4{
+        background: url("../image/accessibility_large.jpg");
+    }
+}
